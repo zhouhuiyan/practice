@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+            table {
+                border-collapse: collapse
+            }
+        
+            .a {
+                border-bottom: none;
+                border-top: none;
+            }
+        
+            @media print {
+                @page {
+                    size: A4 portrait;
+                    margin: 3.7cm 2.6cm 3.5cm;
+                    /* border:1px solid #000; */
+                    /* background:#0f0; */
+                }
+                h1{
+                    page-break-before:always;
+                }
+            }
+        </style>
+</head>
+
+<body>
+    <h1>aaaaaa</h1>
+    <table border="1">
+        <tr>
+            <td>11</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td class="a">21</td>
+            <td>22</td>
+        </tr>
+        <tr>
+            <td class="a">31</td>
+            <td>32</td>
+        </tr>
+        <tr>
+            <td class="a">41</td>
+            <td>42</td>
+        </tr>
+        <tr>
+            <td>51</td>
+            <td>52</td>
+        </tr>
+        
+    </table>
+</body>
+<script>
+    // window.print();
+</script>
+</html>
